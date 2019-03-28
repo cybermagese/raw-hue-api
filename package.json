@@ -1,0 +1,29 @@
+{
+    "name": "raw-hue-api",
+    "version": "0.0.1",
+    "description": "A simple REST implementation of Philips Hue Bridge API with raw json results",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ove Jansson <ove@cybermage.se>",
+    "license": "ISC",
+    "engines": {
+      "node": ">=8"
+    },
+    "dependencies": {
+      "node-fetch":"^2.3.0" 
+    },
+    "repository":{
+      "type": "git",
+      "url": "git://github.com/cybermagese/raw-hue-api"
+    },
+    "keywords": [
+      "hue","iot"
+    ],
+    "bugs": {
+      "url": "https://github.com/cybermagese/raw-hue-api/issues"
+    },
+    "homepage": "https://github.com/cybermagese/raw-hue-api#readme"
+  }
+  
