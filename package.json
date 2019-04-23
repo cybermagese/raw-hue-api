@@ -1,6 +1,6 @@
 {
     "name": "raw-hue-api",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "A simple REST implementation of Philips Hue Bridge API with raw json results",
     "main": "index.js",
     "scripts": {
