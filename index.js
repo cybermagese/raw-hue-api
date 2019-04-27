@@ -31,8 +31,8 @@ class RawHue {
     }
 
     async newUser(ip, devicetype='raw-hue-api#unknown', timeout=1500) {
-        const res = await fetch(encodeURI(`hppt:((${ip}/api`), {
-            method: "PUT",
+        const res = await fetch(`http://${ip}/api`, {
+            method: "POST",
             headers: {
                 'User-Agent' : 'raw-hue-api',
                 'Content-Type': 'application/json'
@@ -44,6 +44,7 @@ class RawHue {
         .catch(error=>{
             return {success:false, error: error};
         });
+        if(typeof res.json !== 'function') return res;
         return await res.json();
     }
     

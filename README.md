@@ -63,6 +63,10 @@ api.newUser(ip,myapp).then((d)=>{
 
 ## Version history
 
+### 0.1.1
+
+* Fixed newUser so it works
+
 ### 0.1.0
 
 * method put, post, setLight, getConfig()
